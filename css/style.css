@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Elsie+Swash+Caps:400,900');
+@import url('https://fonts.googleapis.com/css?family=Clicker+Script');
+/* CSS Syntax:
+selector {
+    property: value;
+    property: value;
+}
+*/
+
+/* Type selector
+p { color: yellow} */
+
+p {
+    /* font-size: 16px; 16px, ?pt, 100%, 1em
+    line-height: 1.5em; */
+    font: normal 1em/1.5em;
+}
+
+figcaption {
+    /* font-weight: normal;
+    font-size: 0.75em;
+    line-height: 1.5em;
+    font-family: Georgia, "New Times Roman", sans-serif; */
+    font: italic 0.75em/1.5em Georgia, "New Times Roman", sans-serif; /*does the same as the above few lines*/
+    color: rgba(192,192,192,1);
+    text-align: right;
+}
+
+/* Class selector, starts with '.' can be applied to any class elements specified */
+.milk-text { /*select elements with class 'milk-text'*/
+    font: bold 2.6em 'Elsie Swash Caps', cursive;
+    color: white;
+    text-shadow: 0 2px 3px #000;
+}
+/* Id select starts with # */
+#logo {
+    background: aqua;
+}
+/* Descendent selector */
+#logo h1 { /* will only style h1s inside of #logo */
+    font-family: "Clicker Script", cursive;
+}
+
+#logo h2 {
+    font-family: "Elsie Swash Caps", cursive;
+}
+
+/* Psuedo selector */
+#details a:link, #details a:visited { /*#details is the descendent selecgor, a:link is the psuedo, compounded the visited state */
+    color: black;
+    text-decoration: none;
+}
+
+#details a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+#details a:active {
+    color: red;
+    text-decoration: underline;
+}
