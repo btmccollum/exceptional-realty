@@ -1,14 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Elsie+Swash+Caps:400,900');
 @import url('https://fonts.googleapis.com/css?family=Clicker+Script');
-/* CSS Syntax:
-selector {
-    property: value;
-    property: value;
-}
-*/
-
-/* Type selector
-p { color: yellow} */
 
 p {
     /* font-size: 16px; 16px, ?pt, 100%, 1em
@@ -21,10 +12,11 @@ figcaption {
     font-size: 0.75em;
     line-height: 1.5em;
     font-family: Georgia, "New Times Roman", sans-serif; */
-    font: italic 0.75em/1.5em Georgia, "New Times Roman", sans-serif; /*does the same as the above few lines*/
+    font: italic 0.75em/1.5em "Elsie Swash Caps", cursive;
     color: rgba(192,192,192,1);
     text-align: right;
 }
+
 
 /* Class selector, starts with '.' can be applied to any class elements specified */
 .milk-text { /*select elements with class 'milk-text'*/
@@ -32,9 +24,9 @@ figcaption {
     color: white;
     text-shadow: 0 2px 3px #000;
 }
+
 /* Id select starts with # */
 #logo {
-    background: aqua;
 }
 /* Descendent selector */
 #logo h1 { /* will only style h1s inside of #logo */
@@ -60,3 +52,82 @@ figcaption {
     color: red;
     text-decoration: underline;
 }
+
+/* SECTIONS */
+
+header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background: white;
+    z-index: 1;
+}
+
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* MEDIA  */
+
+img, video, audio {
+    max-width: 100%;
+}
+
+/* LAYOUT */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#social {
+    position: fixed;
+    top: 200px;
+    right: 20px;
+    width: 40px;
+    z-index: 1;
+}
+
+#social a {
+    display:block;
+    width: 40px;
+    height: 40px;
+    background: yellow;
+}
+
+.wrapper {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.col-1 {
+    float: left;
+    width: 32%;
+    background: #ccc;
+}
+
+.col-2 {
+    float: left;
+    width: 66%;
+    background: #ccc;
+}
+
+.col-3 {
+    background: #ccc;
+}
+
+[class*="col-"] {
+    margin-left: 2%;
+}
+
+.first {
+    margin-left: 0%;
+}
+
+.clearfix {
+    overflow: auto;
+} 
+
