@@ -6,7 +6,6 @@
         <meta name="keywords" content="Exceptional Realty Group, real estate, houses, property">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
@@ -15,52 +14,87 @@
     </head>
 
     <body>
-        <header>
-            <div id="logo">
-                <h1>Exceptional</h1>
-                <h2>Realty Group</h2>
-            </div>
-        
-            <nav id="details">
-                <a href="index.html">About</a>
-                <a href="new-properties.html">New Properties</a>
-                <a href="real-estate-listings.html">Listings</a>
-                <a href="market-report.html">Market Report</a>
-                <a href="http://hud.gov" target='_blank'>H.U.D.</a>
-            </nav>
-        </header>
-        
-        <!-- Map -->
-        <section id="embedded-map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d53693.72860521791!2d-97.31465901817683!3d32.74296007430989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1537894808069" width="425" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
-            <br>
-            <br>
-            <!-- Contact Form -->
-                <label for="fullname">Name:</label>
-                <input type="text" id="fullname" name="fullname" placeholder="Your Name" required><br>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Your email" required><br>
-                <label for="phone">Phone:</label>
-                <input type="tel" id="phone" name="phone" placeholder="Your phone number (optional)"><br>
-                <label for="message">Message:</label>
-                <textarea id="message" rows="10"></textarea><br>
-                <input type="submit" value="Send">
-            <form action="#" method="post">
-            
+        <div id="social">
+            <a href="">Twitter</a>
+            <a href="">Facebook</a>
+            <a href="">Google Plus</a>
+        </div>
 
-            </form>
+        <div class="white-wood">
+            <header class="medium-fade shadow">
+                <div class="wrapper">
+                    <div id="logo">
+                        <h1>Exceptional</h1>
+                        <h2>Realty Group</h2>
+                    </div>
+                </div> <!-- close .wrapper -->
+                <div id="navbar" class="light-fade">
+                    <div class="wrapper">   
+                        <nav> 
+                            <a class="selected" href="index.html">About</a><a href="new-properties.html">New Properties</a><a href="real-estate-listings.html">Listings</a><a href="market-report.html">Market Report</a><a href="contact.html">Contact</a><a href="http://hud.gov" target='_blank'>H.U.D.</a>
+                        </nav>
+                    </div> 
+                </nav>
+            </header>
+        
+            <div class="wrapper clearfix">
+                <!-- Map -->
+                <section id="col-1 shadow">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d53693.72860521791!2d-97.31465901817683!3d32.74296007430989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1537894808069" width="425" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </section>
+                
+                <section class="col-2 first shadow">
+                    <!-- Contact Form -->
+                        <label for="fullname">Name:</label>
+                        <input type="text" id="fullname" name="fullname" placeholder="Your Name" required><br>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Your email" required><br>
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Your phone number (optional)"><br>
+                        <label for="message">Message:</label>
+                        <textarea id="message" rows="10"></textarea><br>
+                        <input type="submit" value="Send">
+                </section>
+            </div> <!-- close .wrapper -->
+        </div> <!-- close .white-wood -->
+
+        <section id="details" class="medium-fade">
+            <div class="wrapper clearfix">
+                <div class="col-1 first border-right">
+                    <h3>Contact</h3>
+                    <p>
+                    email: <a href="mailto:info@exceptionalrealty.com">info@exceptionalrealty.com</a><br>
+                    phone: +1 710 555 1234
+                    </p>
+                    <h3>Correspondence</h3>
+                    <address>
+                    Exceptional Realty<br>
+                    P.O.Box 5555<br>
+                    Brooklyn, NY 11201
+                    </address>
+                </div>
+
+                <div class="col-1 border-right">
+                    <h3>Links</h3>
+                    <p>
+                    <a href="#" target="_blank">Home Restoration</a><br>
+                    <a href="#" target="_blank">Afordable Mortgages</a><br>
+                    <a href="#" target="_blank">Professional Moving Crew</a>
+                    </p>
+                </div>
+
+                <div class="col-1">
+                    <h3>Follow</h3>
+                    <p>
+                    <a href="#" target="_blank">Youtube</a><br>
+                    <a href="#" target="_blank">Facebook</a><br>
+                    <a href="#" target="_blank">Twitter</a>
+                    </p>
+                </div>
+            </div> <!-- close the wrapper-->
         </section>
 
-        <footer id="details">
-            <nav>
-                <br>
-                    <a href="index.html">About</a>  
-                    <a href="new-properties.html">New Properties</a>    
-                    <a href="real-estate-listings.html">Listings</a>    
-                    <a href="market-report.html">Market Report</a>  
-                    <a href="http://hud.gov" target='_blank'>H.U.D.</a> 
-            </nav>
-            <br>
+        <footer>
             &copy; 2014 Exceptional Realty Group. All Rights Reserved.
         </footer>
     </body>
